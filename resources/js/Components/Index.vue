@@ -1,10 +1,14 @@
 <template>
+<div>
+  <h2>
+    ข้อมูลงานวิจัย
+  </h2>
   <v-row
     justify="space-around"
-  > ข้อมูลงานวิจัย
+  >
   
   <v-text-field
-        append-icon="mdi-microphone"
+        append-icon="mdi-magnify"
         class="mx-4"
         flat
         hide-details
@@ -13,7 +17,7 @@
         solo-inverted
       ></v-text-field>
 
-  </v-row>
+  </v-row></div>
 </template>
 
 <script>

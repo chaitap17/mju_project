@@ -5,9 +5,14 @@ const routes = [
         component: () => import("../components/Index.vue"),
     },
     {
-        path: "/index2",
-        name: "index2",
-        component: () => import("../components/index2.vue"),
+        path: "/personnel",
+        name: "personnel",
+        component: () => import("../Components/personnel.vue"),
+    },
+    {
+        path: "/login",
+        name: "login",
+        component: () => import("../Components/login.vue"),
     },
 ];
 
