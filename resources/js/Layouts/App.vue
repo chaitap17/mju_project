@@ -12,6 +12,7 @@
 import AdminMenu from "./AdminMenu";
 import Footer from "./Footer.vue";
 
+
 export default {
   name: "app",
   components: { AdminMenu, Footer },
