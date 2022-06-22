@@ -5286,6 +5286,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
@@ -5357,6 +5367,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -41768,13 +41783,35 @@ var render = function () {
   return _c(
     "v-card",
     [
-      _c("img", { attrs: { src: "/public/Images/logo.png", alt: "logo" } }),
-      _vm._v(" "),
-      _c("v-btn", { attrs: { text: "" } }, [_vm._v("หน้าแรก")]),
-      _vm._v(" "),
-      _c("v-btn", { attrs: { text: "" } }, [_vm._v("บุคลากร")]),
-      _vm._v(" "),
-      _c("v-btn", { attrs: { text: "" } }, [_vm._v("บุคลากร(เข้าสู่ระบบ)")]),
+      _c(
+        "v-parallax",
+        { attrs: { height: "85" } },
+        [
+          _c("img", {
+            attrs: { src: "public/Images/back.jpg", alt: "logo", srcset: "" },
+          }),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { staticClass: "text-right" },
+                [
+                  _c("v-btn", { attrs: { text: "" } }, [_vm._v("หน้าแรก")]),
+                  _vm._v(" "),
+                  _c("v-btn", { attrs: { text: "" } }, [
+                    _vm._v("บุคลากร(เข้าสู่ระบบ)"),
+                  ]),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+        ],
+        1
+      ),
     ],
     1
   )
@@ -41838,22 +41875,20 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "green darken-2 text-center" }, [
-      _c("span", { staticClass: "white--text" }, [
+  return _c(
+    "v-footer",
+    { attrs: { color: "green", padless: "" } },
+    [
+      _c("v-card-text", { staticClass: "py-2 white--text text-center" }, [
         _vm._v(
-          "Faculty of Science, Maejo University– All Rights Reserved 2021"
+          "\n      Faculty of Science, Maejo University - All Rights Reserved 2021\n    "
         ),
       ]),
-    ])
-  },
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

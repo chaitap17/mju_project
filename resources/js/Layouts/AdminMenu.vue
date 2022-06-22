@@ -1,10 +1,20 @@
 <template>
   <v-card>
-    <img src="/public/Images/logo.png" alt="logo">
-    
+    <v-parallax
+    height="85"
+  >
+  <img src="public/Images/back.jpg" alt="logo" srcset="">
+    <v-row>
+      <v-col 
+        class="text-right"
+      >
       <v-btn text>หน้าแรก</v-btn>
-      <v-btn text>บุคลากร</v-btn>
       <v-btn text>บุคลากร(เข้าสู่ระบบ)</v-btn>
+       
+      </v-col>
+    </v-row>
+  </v-parallax>
+      
   </v-card>
 </template>
 
