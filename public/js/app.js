@@ -5286,12 +5286,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
@@ -5423,10 +5417,16 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ "resources_js_components_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Index.vue */ "./resources/js/components/Index.vue"));
   }
 }, {
-  path: "/index2",
-  name: "index2",
+  path: "/personnel",
+  name: "personnel",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_index2_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/index2.vue */ "./resources/js/components/index2.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Components_personnel_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Components/personnel.vue */ "./resources/js/Components/personnel.vue"));
+  }
+}, {
+  path: "/login",
+  name: "login",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Components_login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Components/login.vue */ "./resources/js/Components/login.vue"));
   }
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
@@ -41769,28 +41769,11 @@ var render = function () {
     [
       _c("img", { attrs: { src: "/public/Images/logo.png", alt: "logo" } }),
       _vm._v(" "),
-      _c(
-        "v-tabs",
-        { attrs: { color: "deep-purple accent-4", right: "" } },
-        [
-          _c(
-            "v-btn",
-            {
-              on: {
-                click: function ($event) {
-                  _vm.หน้าแรก
-                },
-              },
-            },
-            [_vm._v("หน้าแรก")]
-          ),
-          _vm._v(" "),
-          _c("v-tab", [_vm._v("บุคลากร")]),
-          _vm._v(" "),
-          _c("v-tab", [_vm._v("บุคลากร(เข้าสู่ระบบ)")]),
-        ],
-        1
-      ),
+      _c("v-btn", { attrs: { text: "" } }, [_vm._v("หน้าแรก")]),
+      _vm._v(" "),
+      _c("v-btn", { attrs: { text: "" } }, [_vm._v("บุคลากร")]),
+      _vm._v(" "),
+      _c("v-btn", { attrs: { text: "" } }, [_vm._v("บุคลากร(เข้าสู่ระบบ)")]),
     ],
     1
   )
@@ -104903,7 +104886,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Index_vue":1,"resources_js_components_index2_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Index_vue":1,"resources_js_Components_personnel_vue":1,"resources_js_Components_login_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

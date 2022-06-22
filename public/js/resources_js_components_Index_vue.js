@@ -29,6 +29,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {};
@@ -128,21 +132,28 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-row",
-    { attrs: { justify: "space-around" } },
+    "div",
     [
-      _vm._v(" ข้อมูลงานวิจัย\n\n"),
-      _c("v-text-field", {
-        staticClass: "mx-4",
-        attrs: {
-          "append-icon": "mdi-microphone",
-          flat: "",
-          "hide-details": "",
-          label: "Search",
-          "prepend-inner-icon": "mdi-magnify",
-          "solo-inverted": "",
-        },
-      }),
+      _c("h2", [_vm._v("\n    ข้อมูลงานวิจัย\n  ")]),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { attrs: { justify: "space-around" } },
+        [
+          _c("v-text-field", {
+            staticClass: "mx-4",
+            attrs: {
+              "append-icon": "mdi-magnify",
+              flat: "",
+              "hide-details": "",
+              label: "Search",
+              "prepend-inner-icon": "mdi-magnify",
+              "solo-inverted": "",
+            },
+          }),
+        ],
+        1
+      ),
     ],
     1
   )
