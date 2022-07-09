@@ -5293,9 +5293,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
@@ -5443,6 +5440,12 @@ var routes = [{
   name: "login",
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Components_login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Components/login.vue */ "./resources/js/Components/login.vue"));
+  }
+}, {
+  path: "/persom",
+  name: "persom",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Components_persom_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Components/persom.vue */ "./resources/js/Components/persom.vue"));
   }
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
@@ -41787,9 +41790,7 @@ var render = function () {
         "v-parallax",
         { attrs: { height: "85" } },
         [
-          _c("img", {
-            attrs: { src: "public/Images/back.jpg", alt: "logo", srcset: "" },
-          }),
+          _c("img", { attrs: { src: "", alt: "logo", srcset: "" } }),
           _vm._v(" "),
           _c(
             "v-row",
@@ -41798,11 +41799,57 @@ var render = function () {
                 "v-col",
                 { staticClass: "text-right" },
                 [
-                  _c("v-btn", { attrs: { text: "" } }, [_vm._v("หน้าแรก")]),
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { text: "" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.$router.push({ path: "/" })
+                        },
+                      },
+                    },
+                    [_vm._v("หน้าแรก")]
+                  ),
                   _vm._v(" "),
-                  _c("v-btn", { attrs: { text: "" } }, [
-                    _vm._v("บุคลากร(เข้าสู่ระบบ)"),
-                  ]),
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { text: "" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.$router.push({ path: "/personnel" })
+                        },
+                      },
+                    },
+                    [_vm._v("บุคลากร")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { text: "" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.$router.push({ path: "/login" })
+                        },
+                      },
+                    },
+                    [_vm._v("เข้าสู่ระบบ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { text: "" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.$router.push({ path: "/persom" })
+                        },
+                      },
+                    },
+                    [_vm._v("เข้าสู่ระบบ1")]
+                  ),
                 ],
                 1
               ),
@@ -104922,7 +104969,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Index_vue":1,"resources_js_Components_personnel_vue":1,"resources_js_Components_login_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Index_vue":1,"resources_js_Components_personnel_vue":1,"resources_js_Components_login_vue":1,"resources_js_Components_persom_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

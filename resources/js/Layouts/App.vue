@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app" data-app>
+  <v-app id="app" data-app >
     <AdminMenu></AdminMenu>
     <v-main>
       <router-view></router-view>
@@ -11,6 +11,7 @@
 <script>
 import AdminMenu from "./AdminMenu";
 import Footer from "./Footer.vue";
+
 
 
 export default {
